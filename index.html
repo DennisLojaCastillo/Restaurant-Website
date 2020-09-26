@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/index.css">
+	<title>Restaurant Site</title>
+</head>
+<body>
+
+	<div class="logo">
+		<h1>the pasta</h1>
+	</div>
+
+	<div class="slideshow-container">
+		<div class="mySlides fade">
+			<div class="numbertext"></div>
+			<img src="img/slide1.jpg">
+		</div>
+
+		<div class="mySlides fade">
+			<div class="numbertext"></div>
+			<img src="img/slide2.jpg">
+		</div>
+
+		<div class="mySlides fade">
+			<div class="numbertext"></div>
+			<img src="img/slide3.jpg">
+		</div>
+
+	</div>
+	<br>
+	<div style="text-align:center">
+		<span class="dot"></span> 
+		<span class="dot"></span> 
+		<span class="dot"></span> 
+	</div>
+
+	<script>
+		var slideIndex = 0;
+		showSlides();
+
+		function showSlides() {
+			var i;
+			var slides = document.getElementsByClassName("mySlides");
+			var dots = document.getElementsByClassName("dot");
+			for (i = 0; i < slides.length; i++) {
+				slides[i].style.display = "none";  
+			}
+			slideIndex++;
+			if (slideIndex > slides.length) {slideIndex = 1}    
+				for (i = 0; i < dots.length; i++) {
+					dots[i].className = dots[i].className.replace(" active", "");
+				}
+				slides[slideIndex-1].style.display = "block";  
+				dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 5000); // Change image every 5 seconds
+}
+</script>
+
+
+<div class="navbar">
+	<ul>
+		<li><a href="#section1">home</a></li>
+		<li><a href="#section2">menu</a></li>
+		<li><a href="#section3">book</a></li>
+		<li><a href="#section4">about</a></li>
+		<li><a href="#section5">locations</a></li>
+	</ul>
+	<hr>
+</div>
+
+<!-- Rediger overskrifter her! --> 
+
+<div id="section1">
+	<h1>Welcome to the</h1>
+	<h2>pasta univers</h2>
+	<img src="img/home.jpg" class="pastaPic" alt="Picture for home section">
+	<img src="img/home2.jpg" class="kitchenPic" alt="Picture for home section">
+	<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste excepturi corporis minus dicta voluptate adipisci, dolores ullam, assumenda tenetur veniam, rem sunt incidunt at reprehenderit, ipsa nostrum sequi cumque quos illum. Corrupti quasi inventore aperiam magni ipsum provident officia molestiae! lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius alias, pariatur. Fuga ratione, atque reiciendis, sit tenetur odit quo. Inventore.</p>
+
+</div>
+
+<div id="section2">
+	<h1>menu</h1>
+	<div class="menuSections">
+		<div class="row">
+				<h1>pasta</h1>
+			<h2>pastis</h2>
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, sapiente.</p>
+			<h3>89.00,-</h3>
+
+			<h2>pastis</h2>
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, sapiente.</p>
+			<h3>89.00,-</h3>
+
+			<h2>pastis</h2>
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, sapiente.</p>
+			<h3>89.00,-</h3>
+
+			<h2>pastis</h2>
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, sapiente.</p>
+			<h3>89.00,-</h3>
+		</div>
+
+		<div class="row">
+
+			<h1>pizza</h1>
+			<h2>pizza</h2>
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, sapiente.</p>
+			<h3>89.00,-</h3>
+
+			<h2>pizza</h2>
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, sapiente.</p>
+			<h3>89.00,-</h3>
+
+			<h2>pizza</h2>
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, sapiente.</p>
+			<h3>89.00,-</h3>
+
+			<h2>pizza</h2>
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, sapiente.</p>
+			<h3>89.00,-</h3>
+
+		</div>
+
+		<div class="row">
+
+			<h1>dessert</h1>
+			<h2>dessert</h2>
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, sapiente.</p>
+			<h3>89.00,-</h3>
+
+			<h2>dessert</h2>
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, sapiente.</p>
+			<h3>89.00,-</h3>
+
+			<h2>dessert</h2>
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, sapiente.</p>
+			<h3>89.00,-</h3>
+
+			<h2>dessert</h2>
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, sapiente.</p>
+			<h3>89.00,-</h3>
+
+		</div>
+	</div>
+</div>
+
+<div id="section3">
+	<h1>This is a new section</h1>
+</div>
+
+<div id="section4">
+	<h1>This is a new section</h1>
+</div>
+
+<div id="section5">
+	<h1>This is a new section</h1>
+</div>
+
+
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+<script>
+//Get the button
+var mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+	if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+		mybutton.style.display = "block";
+	} else {
+		mybutton.style.display = "none";
+	}
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+	document.body.scrollTop = 0;
+	document.documentElement.scrollTop = 0;
+}
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
