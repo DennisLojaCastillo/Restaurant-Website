@@ -38,12 +38,12 @@ img {
 
 
 /* Fading animation */
-.fade {
+/*.fade {
 	-webkit-animation-name: fade;
 	-webkit-animation-duration: 5s;
 	animation-name: fade;
 	animation-duration: 4s;
-}
+}*/
 
 @-webkit-keyframes fade {
 	from {opacity: .3} 
@@ -305,15 +305,22 @@ img {
 }
 
 .calendarForm form {
-	
+	border: 1px solid;
+	width: 200px;
+	background: blue;
+	margin-left: 150px;
+}
+
+.calendarForm #fname {
+	display: inline-block;
 }
 
 .calendarForm label {
-
+	width: 50px;
 }
 
 .calendarForm select {
-	width: 50px;
+	width: 70px;
 	text-align: center;
 }
 

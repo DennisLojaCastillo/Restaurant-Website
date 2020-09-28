@@ -206,7 +206,13 @@
 
 	<div class="calendarForm">
 		<h1>book a table</h1>
-		<form action="/action_page.php">
+		<form>
+				<label for="fname">First Name</label>
+				<input type="text" id="fname" name="fname">
+				<label for="lname">Last Name</label>
+				<input type="text" id="lname" name="lname">
+		</form>
+		<form>
 			<label for="pers">Persons:</label>
 			<select id="pers" name="pers">
 				<option value="2pers">2</option>
@@ -221,7 +227,6 @@
 			</select>
 			<input type="submit">
 		</form>
-
 	</div>
 </div>
 
