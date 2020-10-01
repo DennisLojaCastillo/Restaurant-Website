@@ -204,30 +204,31 @@
 		</ul>
 	</div>
 
-	<div class="calendarForm">
+	<div class="calendar">
 		<h1>book a table</h1>
-		<form>
+			<form action="/action_page.php">
 				<label for="fname">First Name</label>
-				<input type="text" id="fname" name="fname">
+				<input type="text" id="fname" name="firstname" placeholder="Your name..">
+
 				<label for="lname">Last Name</label>
-				<input type="text" id="lname" name="lname">
-		</form>
-		<form>
-			<label for="pers">Persons:</label>
-			<select id="pers" name="pers">
-				<option value="2pers">2</option>
-				<option value="3pers">3</option>
-				<option value="4pers">4</option>
-				<option value="5pers">5</option>
-				<option value="6pers">6</option>
-				<option value="7pers">7</option>
-				<option value="8pers">8</option>
-				<option value="9pers">9</option>
-				<option value="10pers">10</option>
-			</select>
-			<input type="submit">
-		</form>
-	</div>
+				<input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+				<label for="persons">Persons</label>
+				<select id="persons" name="persons">
+					<option value="numbPers">1</option>
+					<option value="numbPers">2</option>
+					<option value="numbPers">3</option>
+					<option value="numbPers">4</option>
+					<option value="numbPers">5</option>
+					<option value="numbPers">6</option>
+					<option value="numbPers">7</option>
+					<option value="numbPers">8</option>
+					<option value="numbPers">9</option>
+					<option value="numbPers">10</option>
+				</select>
+
+				<input type="submit" value="Submit">
+			</form>
 </div>
 
 
